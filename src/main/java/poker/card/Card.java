@@ -19,6 +19,10 @@ public class Card implements Comparable<Card> {
         this.value = value;
     }
 
+    public CardSuit getSuit() {
+        return this.suit;
+    }
+
     public CardValue getValue() {
         return this.value;
     }
@@ -39,7 +43,7 @@ public class Card implements Comparable<Card> {
         if (!(object instanceof Card)) {
             return false;
         }
-        
+
         Card card = (Card) object;
         return  Objects.equals(suit, card.suit) &&
                 Objects.equals(value, card.value);

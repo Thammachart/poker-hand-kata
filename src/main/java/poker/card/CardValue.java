@@ -1,4 +1,4 @@
-package org;
+package poker.card;
 
 public enum CardValue {
     _A(1, "A"),_2(2, "2"), _3(3, "3"), _4(4, "4"), _5(5, "5"), _6(6, "6"), _7(7, "7"), 

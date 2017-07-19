@@ -1,6 +1,9 @@
-package org;
+package poker;
 
 import java.util.stream.*;
+
+import poker.card.Card;
+import poker.hands.PokerHand;
 
 public class GameEngine {
     public String duel(PokerHand handA, PokerHand handB) {

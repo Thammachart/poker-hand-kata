@@ -1,5 +1,0 @@
-package org.hands;
-
-public enum HandTypeValue {
-    HIGHCARD, PAIR, TWOPAIR, THREEOFAKIND, STRIAGHT, FLUSH, FULLHOUSE, FOUROFAKIND, STRAIGHTFLUSH
-}

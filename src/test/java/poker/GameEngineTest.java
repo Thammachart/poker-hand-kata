@@ -5,7 +5,7 @@
         Calm yourself in the middle of process
 */
 
-package org;
+package poker;
 
 import org.junit.Test;
 import org.junit.Ignore;
@@ -13,6 +13,9 @@ import org.junit.Assert;
 
 import java.util.stream.*;
 import java.util.Arrays;
+
+import poker.card.Card;
+import poker.hands.PokerHand;
 
 public class GameEngineTest {
     private GameEngine gameEngine = new GameEngine();

@@ -1,4 +1,4 @@
-package org;
+package poker.card;
 
 import java.util.Objects;
 

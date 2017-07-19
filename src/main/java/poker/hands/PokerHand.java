@@ -1,6 +1,8 @@
-package org;
+package poker.hands;
 
 import java.util.stream.*;
+
+import poker.card.*;
 
 public class PokerHand {
     private final Card[] cards;

@@ -1,4 +1,4 @@
-package org;
+package poker.card;
 
 import org.junit.Test;
 import org.junit.Assert;

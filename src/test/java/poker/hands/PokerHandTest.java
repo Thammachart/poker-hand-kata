@@ -1,9 +1,11 @@
-package org;
+package poker.hands;
 
 import org.junit.Test;
 import org.junit.Assert;
 
 import java.util.stream.*;
+
+import poker.card.Card;
 
 public class PokerHandTest {
     @Test

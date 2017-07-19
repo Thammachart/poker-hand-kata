@@ -1,4 +1,4 @@
-package org;
+package poker.card;
 
 public enum CardSuit {
     C("C"), D("D"), H("H"), S("S");

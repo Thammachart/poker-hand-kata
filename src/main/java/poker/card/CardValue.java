@@ -1,14 +1,12 @@
 package poker.card;
 
 public enum CardValue {
-    _A(1, "A"),_2(2, "2"), _3(3, "3"), _4(4, "4"), _5(5, "5"), _6(6, "6"), _7(7, "7"), 
-    _8(8, "8"), _9(9, "9"), _T(10, "T"), _J(11, "J"), _Q(12, "Q"), _K(13, "K");
+    _A("A"), _2("2"), _3("3"), _4("4"), _5("5"), _6("6"), _7("7"), 
+    _8("8"), _9("9"), _T("T"), _J("J"), _Q("Q"), _K("K");
 
-    private int val;
     private String text;
 
-    CardValue(int val, String text) {
-        this.val = val;
+    CardValue(String text) {
         this.text = text;
     }
 
@@ -23,7 +21,7 @@ public enum CardValue {
     }
 
     int getCardValue() {
-        return this.val;
+        return this.ordinal();
     }
 
     @Override

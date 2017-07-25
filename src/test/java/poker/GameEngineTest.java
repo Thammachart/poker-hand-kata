@@ -22,8 +22,8 @@ public class GameEngineTest {
 
     @Test
     public void testHighCardPlayerAWin() {
-        PokerHand handA = PokerHand.parse("H2", "D3", "S5", "C9", "DK");
-        PokerHand handB = PokerHand.parse("C2", "H3", "S4", "C8", "HA");
+        PokerHand handA = PokerHand.parse("C2", "H3", "S4", "C8", "HA");
+        PokerHand handB = PokerHand.parse("H2", "D3", "S5", "C9", "DK");
 
         String result = gameEngine.duel(handA, handB);
         Assert.assertEquals("A wins", result);
@@ -31,8 +31,8 @@ public class GameEngineTest {
 
     @Test
     public void testHighCardPlayerBWin() {
-        PokerHand handA = PokerHand.parse("C2", "H3", "S4", "C8", "HA");
-        PokerHand handB = PokerHand.parse("H2", "D3", "S5", "C9", "DK");
+        PokerHand handA = PokerHand.parse("H2", "D3", "S5", "C9", "DK");
+        PokerHand handB = PokerHand.parse("C2", "H3", "S4", "C8", "HA");
 
         String result = gameEngine.duel(handA, handB);
         Assert.assertEquals("B wins", result);

@@ -10,14 +10,14 @@ import poker.card.CardValue;
 public class RoyalFlushChecker implements PokerHandChecker {
     @Override
     public boolean isValid(PokerHand hand) {
-        return allSameSuit(hand.getCards()) && allRoyalConsecutive(hand.getCards());
+        return allSameSuit(hand.getCards()) && isRoyalConsecutive(hand.getCards());
     }
 
     private boolean allSameSuit(Card[] cards) {
         return Stream.of(cards).allMatch(card -> card.getSuit() == cards[0].getSuit());
     }
 
-    private boolean allRoyalConsecutive(Card[] cards) {
+    private boolean isRoyalConsecutive(Card[] cards) {
         return Stream.of(cards).allMatch(card ->
                 card.getValue() == CardValue._T ||
                 card.getValue() == CardValue._J ||
